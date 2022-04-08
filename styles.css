@@ -1,0 +1,79 @@
+/* --------------------------------- Prerun --------------------------------- */
+html {
+font-size: 20px;
+font-family: 'Rubik', sans-serif;
+background-color: var(--lightpink);
+}
+
+a {
+    text-decoration: none;
+    color: var(--brown);
+}
+
+button {
+    background-color: var(--yellow);
+    color: var(--brown);
+    font-size: 0.8rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    padding: 17px 27px;
+    border-radius: 50px;
+    border: 1px solid var(--brown);
+}
+
+main {
+    margin-top: 6rem;
+}
+
+h1 {
+    font-size: 8.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 7rem;
+    color:var(--brown)
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* --------------------------------- Header --------------------------------- */
+header {
+    position: fixed;
+    right:0;
+    left:0;
+    top:0;
+    background-color: var(--pink);
+    padding: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 5;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+/* ---------------------------------- Hero ---------------------------------- */
+
+.herobox {
+    background-color: var(--yellow);
+    border-radius: 90px;
+    margin: 10% 10%;
+    display: flex;
+    padding: 5rem;
+    align-items: center;
+}
+
+.herobox img {
+    height: 500px;
+    position: relative;
+}
