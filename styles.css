@@ -153,23 +153,21 @@ nav li {
 }
 
 .cards-fun img {
-    width:50%;
+    height:200px;
 }
 
 .automation-card-1 {
     display: flex;
     align-items: center;
-    justify-content:center;
     background-color: var(--blue);
     border-radius: 60px;
     padding: 2rem;
-    
+    gap:0 2rem;
 }
 
 .automation-card-2 {
     display: flex;
     align-items: center;
-    justify-content:center;
     background-color: var(--pink);
     border-radius: 60px;
     padding: 2rem;
@@ -185,11 +183,8 @@ nav li {
     bottom:20px;
 }
 
-.txtcontent {
-    margin-right: 2rem;
-}
-
 .pastille {
+    align-self:flex-start;
     font-size: 0.65rem;
     margin-bottom: 2rem;
 }
@@ -200,4 +195,52 @@ footer  {
     align-items: center;
     background-color: pink;
     padding: 25px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Media queries                               */
+/* -------------------------------------------------------------------------- */
+
+/* --------------------------------- 1600px --------------------------------- */
+
+@media screen and (max-width:1600px) {
+
+    html {
+        font-size: 16px;
+    }
+    
+    .automation-card-1, .automation-card-2 {
+        flex-direction:column;
+        gap:2rem 0;
+    }
+}
+
+/* ---------------------------------- 900px --------------------------------- */
+
+@media screen and (max-width:1200px) {
+
+    /* ---------------------------------- Cards fix ------------------------- */
+    .cards-fun {
+        flex-direction: column;
+    }
+    
+    .aPropos {
+        flex-direction: column-reverse;
+    }
+
+    .aPropos img {
+        margin-bottom: 3rem;
+    }
+
+    .txtcontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pastille {
+        align-self: center;
+    }
+    
 }
